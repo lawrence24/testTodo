@@ -1,0 +1,40 @@
+{
+  "name": "testtodo",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrence24/testTodo.git"
+  },
+  "author": "Joven Lawrence Gersaniba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawrence24/testTodo/issues"
+  },
+  "homepage": "https://github.com/lawrence24/testTodo#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
