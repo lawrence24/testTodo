@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class AddTodo extends Component {
-
   render() {
+    const {handleSubmit, handleChange, todo, edited} = this.props;
     return (
-      <form onSubmit={ this.props.handleSubmit } style={{ display: 'flex'}}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex'}}>
         <input
           type="text"
           style={{flex: '8', padding: '5px'}}
           placeholder="Add Todo ..."
-          value = { this.props.todo }
-          onChange = { this.props.handleChange }
+          value= {todo}
+          onChange= {handleChange}
         />
         <input
           type="submit"
-          value={this.props.edited ? 'Edit Todo' : "Add Todo"}
-          className={this.props.edited ? 'btn-success' : "btn-primary"}
+          value={edited ? 'Edit Todo' : "Add Todo"}
+          className={edited ? 'btn-success' : "btn-primary"}
           style={{flex: '1'}}
         />
       </form>
