@@ -41,7 +41,7 @@ class App extends Component {
       todo.id !== id)
     const selectedTodos = this.state.todos.find(todo =>
       todo.id === id)
-    console.log(selectedTodos)
+    
     this.setState({
       todos: filteredTodos,
       todo: selectedTodos.title,

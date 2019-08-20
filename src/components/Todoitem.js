@@ -19,7 +19,9 @@ class Todoitem extends Component {
 }
 
 Todoitem.propTypes = {
-  todo: PropTypes.object.isRequired
+  todo: PropTypes.object.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  editTodo: PropTypes.func.isRequired
 }
 
 

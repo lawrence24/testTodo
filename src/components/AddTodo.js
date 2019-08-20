@@ -25,6 +25,12 @@ class AddTodo extends Component {
 
 }
 
+AddTodo.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  todo: PropTypes.string,
+  edited: PropTypes.bool.isRequired,
+}
 
 
 export default AddTodo;
